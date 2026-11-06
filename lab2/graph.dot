@@ -1,0 +1,25 @@
+digraph G {
+  rankdir=LR;
+  node [shape=circle, style=filled, fillcolor=white, fontsize=12];
+  edge [fontsize=10];
+
+  "A" [label="A"];
+  "B" [label="B"];
+  "C" [label="C"];
+  "D" [label="D"];
+  "E" [label="E"];
+  "F" [label="F"];
+  "G" [label="G"];
+  "H" [label="H"];
+
+  "A" -> "B" [label="3", color=red, penwidth=2.5];
+  "A" -> "C" [label="2", color=gray, penwidth=1.0];
+  "B" -> "D" [label="4", color=red, penwidth=2.5];
+  "C" -> "D" [label="1", color=gray, penwidth=1.0];
+  "B" -> "E" [label="2", color=gray, penwidth=1.0];
+  "D" -> "F" [label="3", color=red, penwidth=2.5];
+  "E" -> "F" [label="4", color=gray, penwidth=1.0];
+  "C" -> "G" [label="6", color=gray, penwidth=1.0];
+  "F" -> "H" [label="2", color=red, penwidth=2.5];
+  "G" -> "H" [label="1", color=gray, penwidth=1.0];
+}
